@@ -1,64 +1,67 @@
-# 🤖 Codex-GenAI — Multi-Agent AI Software Development System
+Codex-GenAI
 
-Codex-GenAI is an autonomous multi-agent software engineering platform built using **LangGraph**, **Gemini**, and **Node.js**.
+An experimental GenAI-powered autonomous software engineering system built using LangGraph
+ that simulates a complete software development team.
 
-The system accepts a software requirement and intelligently:
-- Understands the requirement
-- Asks clarifying questions
-- Creates technical specifications
-- Plans architecture
-- Generates code
-- Reviews and debugs output
-- Tracks token usage
-- Streams execution in real time
+Codex-GenAI is designed to understand user requirements, plan system architecture, generate production-ready code, debug issues, test applications, and iterate based on feedback — with minimal human intervention.
 
----
+Inspired by autonomous AI systems like Devin, this project focuses on building a scalable multi-agent AI workflow for real-world software development.
+Currently under active development and research. ⚡
 
-# 🚀 Features
+✨ Features
+🤖 Multi-Agent Architecture (PM, Architect, Planner, Coder, Reviewer, Debugger, Deployer)
+🧠 Autonomous project planning & task breakdown
+🏗️ AI-generated backend + frontend architecture
+💻 Automatic code generation using LLMs
+🐳 Docker sandbox execution environment
+🔄 Self-debugging & rollback system
+📦 Git snapshot/version control per task
+🧩 Context-aware coding using file interface registry
+💾 Persistent state management with Redis checkpoints
+📊 Token tracking & cost monitoring
+⚡ Parallel task execution support
+🔍 Blueprint validation before development starts
+🛠️ Tech Stack
+LangGraph — Agent orchestration
+Google Gemini API — LLM reasoning & generation
+React + Vite — Frontend
+Node.js + Express — Backend
+PostgreSQL / MongoDB — Database
+Redis — State persistence
+Docker — Sandbox execution
+Git — Snapshots & rollback
+Pinecone — Long-term vector memory
+🧠 System Workflow
+User Requirement
+      ↓
+PM Agent → Architect Agent → Planner Agent
+      ↓
+Coder Agent → Reviewer → Executor → Debugger
+      ↓
+Feedback Loop → Deployment
 
-- Multi-Agent Architecture
-- LangGraph Workflow Engine
-- Gemini-Powered AI Agents
-- Real-Time WebSocket Streaming
-- Redis Checkpointing & Persistence
-- Token Usage Tracking
-- Automated Planning Pipeline
-- Modular Agent System
-- Frontend Dashboard
-- REST + WebSocket APIs
+The system continuously improves code quality using:
 
----
+validation loops
+rollback recovery
+project pattern extraction
+real execution testing
+iterative feedback cycles
+⚠️ Current Status
 
-# 🧠 Current Development Phase
+This project is currently under development and not production-ready yet.
 
-### ✅ Phase 1 — PM Agent
-Transforms raw user requirements into structured software specifications.
+The goal is to build a highly reliable autonomous AI engineering system capable of handling real-world software projects with minimal human intervention.
 
-Current capabilities:
-- Requirement analysis
-- Clarification question generation
-- Structured spec creation
-- Token monitoring
+📌 Future Goals
+Support multiple tech stacks
+Auto deployment pipelines
+Advanced RAG integration
+Cloud sandbox execution
+AI-generated testing suite
+Multi-user collaboration
+⭐ Vision
 
----
+“Replacing repetitive software engineering workflows using autonomous AI agents.”
 
-# 📁 Project Structure
-
-```bash
-codex-project/
-├── dashboard/                # Frontend dashboard
-├── server/                   # Backend server
-│   ├── routes/               # REST APIs
-│   ├── services/             # Business logic
-│   ├── ws/                   # WebSocket streaming
-│   └── index.js
-├── src/
-│   ├── agents/               # AI agents
-│   ├── config/               # Graph + state configs
-│   ├── nodes/                # LangGraph nodes
-│   └── utils/                # Utilities
-├── tests/                    # Test suites
-├── .env
-├── .gitignore
-├── package.json
-└── README.md
+Built with passion for GenAI, autonomous systems, and AI-powered software engineering.
